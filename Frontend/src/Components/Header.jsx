@@ -55,7 +55,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink to="/scanner" activeClassName="active-link">
-                QR-Code
+                QR-Codes
               </NavLink>
             </li>
             <li>

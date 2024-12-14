@@ -1815,8 +1815,8 @@ section,
 }
 
 .member-card img {
-  width: 180px !important;
-  height: 150px !important;
+  width: 230px !important;
+  height: 190px !important;
   object-fit: cover ;
   border-radius: 10% !important;
   margin-bottom: 10px;
@@ -2719,5 +2719,140 @@ section,
 
   .download-section {
     padding: 1.5rem;
+  }
+}
+
+
+/* General styles for the certificate */
+.certificate {
+  margin-top: 40px !important;
+  width: 100%;  /* Make the certificate take full width of the container */
+  max-width: 210mm;  /* Set max width to A4 size */
+  height: auto;  /* Let height adjust proportionally */
+  padding: 20px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  border: 5px solid brown;  /* Brown border (instead of outline) */
+  text-align: center;
+  margin: auto; /* Center horizontally */
+}
+
+/* Logo sizing - responsive */
+.certificate-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;  /* Make the logo responsive */
+  max-height: 170px;  /* Keep a reasonable height for the logo */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Header Styling */
+.certificate-header h2 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+.certificate-header p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+/* Body Styling */
+.membership-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.certificate-body h3,
+.certificate-body h4 {
+  font-size: 2rem;
+}
+
+.life-member {
+  font-size: 3rem;  /* Larger font for the title */
+  font-weight: bold;
+  color: rgb(136, 2, 2);
+}
+
+/* Signature styling */
+.signature {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signature img {
+  width: 100%;  /* Make signature image responsive */
+  max-width: 150px;
+  height: auto;
+}
+
+/* Date Styling */
+.date {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Download Button */
+.download-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+  .certificate-header h2 {
+    font-size: 4vw;
+  }
+
+  .certificate-body h3,
+  .certificate-body h4 {
+    font-size: 3vw;
+  }
+
+  .certificate-body .membership-number {
+    font-size: 1.2rem;
+  }
+
+  .life-member {
+    font-size: 2.5rem;
+  }
+
+  .download-button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-header h2 {
+    font-size: 5vw;
+  }
+
+  .certificate-body h3,
+  .certificate-body h4 {
+    font-size: 4vw;
+  }
+
+  .life-member {
+    font-size: 2rem;
+  }
+
+  .download-button {
+    font-size: 1.4rem;
   }
 }

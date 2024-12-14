@@ -9,7 +9,7 @@ const ScannerPage = () => {
     <>
     <Header/>
     <Breadcrumb 
-        title="Scanner" 
+        title="Qr-Code" 
         description="Scan Me To Pay"      />    
     <Scanner/>
       <Footer/>
